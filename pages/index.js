@@ -14,8 +14,8 @@ const HIGHLIGHTS = [
         <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
       </svg>
     ),
-    title: 'Search Engine Optimisation',
-    desc: 'On-page and off-page SEO that improves visibility and drives qualified organic traffic over the long term.',
+    title: 'SEO & Content',
+    desc: 'On-page and off-page SEO, keyword research, and content writing that improve visibility and drive qualified organic traffic.',
   },
   {
     icon: (
@@ -23,17 +23,17 @@ const HIGHLIGHTS = [
         <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
       </svg>
     ),
-    title: 'Meta Ads Management',
-    desc: 'Precision-targeted Facebook and Instagram advertising built for efficient cost per result and meaningful conversions.',
+    title: 'Meta Ads & Social Media',
+    desc: 'Precision-targeted Facebook and Instagram advertising, plus organic social media and LinkedIn management that build lasting presence.',
   },
   {
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
       </svg>
     ),
-    title: 'LinkedIn Growth',
-    desc: 'Profile positioning, content strategy, and outreach systems that build authority and generate inbound business.',
+    title: 'Shopify & E-Commerce',
+    desc: 'Complete Shopify store management — product listings, store design, pricing strategy, and product descriptions that convert.',
   },
 ]
 

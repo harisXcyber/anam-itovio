@@ -14,37 +14,61 @@ const SERVICES = [
     number: '01',
     title: 'On-Page SEO',
     desc: 'Optimising every element within your website — content, structure, meta tags, internal linking, and page speed — so search engines can understand, index, and rank your pages effectively.',
-    deliverables: ['Keyword Research & Mapping', 'Meta Title & Description Optimisation', 'Content Audit & Recommendations', 'Internal Linking Structure', 'Page Speed & Core Web Vitals'],
+    deliverables: ['Content Optimisation', 'Meta Title & Description Optimisation', 'Internal Linking Structure', 'Content Audit & Recommendations', 'Page Speed & Core Web Vitals'],
   },
   {
     number: '02',
-    title: 'Off-Page SEO',
-    desc: 'Building your site\'s authority through a strategic and sustainable backlink acquisition process. The goal is to earn links that signal trust and expertise to Google — not shortcuts that create risk.',
-    deliverables: ['Competitor Backlink Analysis', 'Link Prospecting & Outreach', 'Guest Post Campaigns', 'Digital PR', 'Anchor Text Strategy'],
+    title: 'Off-Page SEO & Backlink Building',
+    desc: 'Building your site\'s authority through high-quality backlink acquisition — guest posting outreach, link insertion, and domain authority improvement that signals trust to Google, not shortcuts that create risk.',
+    deliverables: ['Guest Posting Outreach', 'Link Insertion', 'Competitor Backlink Analysis', 'Domain Authority Growth', 'Anchor Text Strategy'],
   },
   {
     number: '03',
-    title: 'Meta Ads Management',
+    title: 'Shopify Store Management',
+    desc: 'Complete Shopify store management — product listings, store design, pricing strategy, and day-to-day operations — so your store looks professional, converts visitors, and runs smoothly.',
+    deliverables: ['Product Listings', 'Store Design', 'Pricing Strategy', 'Order Processing', 'Conversion Optimisation'],
+  },
+  {
+    number: '04',
+    title: 'Meta Ads (Facebook & Instagram)',
     desc: 'End-to-end management of Facebook and Instagram advertising campaigns — from audience research and creative direction to ongoing optimisation and reporting.',
     deliverables: ['Audience Research & Targeting', 'Campaign Architecture', 'Ad Creative Strategy', 'A/B Testing', 'Budget Management', 'Performance Reporting'],
   },
   {
-    number: '04',
-    title: 'LinkedIn Growth Strategy',
-    desc: 'A complete LinkedIn presence strategy — profile positioning, content that builds authority, and outreach systems designed to attract the right opportunities to your profile.',
-    deliverables: ['Profile Optimisation', 'Content Calendar & Strategy', 'Engagement Tactics', 'Connection Growth', 'Inbound Lead Strategy'],
+    number: '05',
+    title: 'Content Writing & Blog Articles',
+    desc: 'SEO-friendly blog articles and website content written to rank, engage, and convert — building topical authority while supporting your wider marketing strategy.',
+    deliverables: ['Blog Articles', 'Website Copy', 'SEO Content Briefs', 'Content Calendars'],
   },
   {
-    number: '05',
+    number: '06',
+    title: 'Product Descriptions',
+    desc: 'Persuasive, search-optimised product descriptions for Shopify and e-commerce stores — copy that highlights benefits, answers objections, and turns browsers into buyers.',
+    deliverables: ['E-Commerce Copywriting', 'Benefit-Led Descriptions', 'SEO Optimisation', 'Brand Voice Consistency'],
+  },
+  {
+    number: '07',
+    title: 'Keyword Research',
+    desc: 'In-depth keyword research that uncovers what your audience is actually searching for — mapping high-intent terms to pages so every piece of content has a clear ranking target.',
+    deliverables: ['Search Intent Analysis', 'Competitor Gap Analysis', 'Keyword Mapping', 'Long-Tail Opportunities'],
+  },
+  {
+    number: '08',
+    title: 'Social Media Marketing',
+    desc: 'Organic social media strategy and management that keeps your brand visible, consistent, and engaging across the platforms where your audience spends its time.',
+    deliverables: ['Content Planning', 'Platform Strategy', 'Engagement Growth', 'Brand Consistency'],
+  },
+  {
+    number: '09',
     title: 'Lead Generation',
     desc: 'Multi-channel systems that consistently fill your pipeline with qualified prospects. Combining organic and paid strategies, built around your specific sales process and ideal customer.',
     deliverables: ['Funnel Architecture', 'Landing Page Strategy', 'Multi-Channel Campaigns', 'Lead Qualification Criteria', 'Follow-Up Sequence Design'],
   },
   {
-    number: '06',
-    title: 'Digital Marketing Strategy',
-    desc: 'A comprehensive marketing plan that aligns channels, messaging, and budget with your business goals. Ideal for brands starting from scratch or looking to bring structure to scattered efforts.',
-    deliverables: ['Market & Competitor Analysis', 'Channel Selection', 'Messaging Framework', 'Budget Allocation', 'KPI Framework & Reporting Setup'],
+    number: '10',
+    title: 'LinkedIn Management',
+    desc: 'Complete LinkedIn presence management — profile positioning, content that builds authority, and outreach systems designed to attract the right opportunities to your profile.',
+    deliverables: ['Profile Optimisation', 'Content Calendar & Strategy', 'Engagement Tactics', 'Connection Growth', 'Inbound Lead Strategy'],
   },
 ]
 
@@ -60,7 +84,7 @@ export default function Services() {
     <>
       <Head>
         <title>Services — Anam Shahid | SEO, Meta Ads & Digital Marketing</title>
-        <meta name="description" content="Digital marketing services from Anam Shahid — SEO, Meta Ads, LinkedIn growth, lead generation, and full digital marketing strategy." />
+        <meta name="description" content="Digital marketing services from Anam Shahid — on-page & off-page SEO, Shopify store management, Meta Ads, content writing, keyword research, social media marketing, lead generation, and LinkedIn management." />
         <link rel="canonical" href="https://anam.itovio.com/services" />
       </Head>
 

@@ -9,6 +9,52 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] },
 })
 
+const EXPERIENCE = [
+  {
+    company: 'Lukadah LLC',
+    role: 'Remote E-Commerce Executive',
+    period: 'July 2026 — Present',
+    desc: 'Managing product listings on e-commerce platforms, processing orders, handling customer inquiries, coordinating with logistics partners, and preparing sales performance reports.',
+  },
+  {
+    company: 'Rhino Clicks',
+    role: 'On-Page SEO Intern',
+    period: 'June 2025 — August 2025',
+    desc: 'Gained hands-on experience in on-page content strategies, keyword optimization, and meta tags, and contributed to team SEO projects.',
+  },
+  {
+    company: 'Laskon Tech',
+    role: 'Off-Page SEO Specialist',
+    period: '',
+    desc: 'High-quality backlink building, guest posting outreach, link insertion, and domain authority improvement for client websites.',
+  },
+  {
+    company: "Elibas — Children's Clothing Store",
+    role: 'Shopify Store Manager & Meta Ads Specialist',
+    period: '2025',
+    desc: 'Managed the complete Shopify store — product listings, store design, and pricing strategy — and ran targeted Meta Ads campaigns on Facebook and Instagram.',
+  },
+  {
+    company: 'SmartSpheres',
+    role: 'E-Commerce Entrepreneur — Shopify Store Owner',
+    period: '2025',
+    desc: 'Built and managed own Shopify dropshipping store from scratch. Handled product research, listing creation, SEO optimization, store design, and digital marketing strategies.',
+  },
+]
+
+const CERTIFICATIONS = [
+  {
+    title: 'Digital Marketing Certificate',
+    issuer: 'Enablers',
+    year: '2024',
+  },
+  {
+    title: 'On-Page SEO Intern Certificate',
+    issuer: 'Rhino Clicks',
+    year: 'June 2025 — August 2025',
+  },
+]
+
 const VALUES = [
   {
     title: 'Research Before Everything',
@@ -197,6 +243,148 @@ export default function About() {
         `}</style>
       </section>
 
+      {/* Experience */}
+      <section className="section" style={{ background: 'var(--bg-secondary)' }}>
+        <div className="container">
+          <motion.div {...fadeUp(0.05)} style={{ textAlign: 'center', marginBottom: '56px' }}>
+            <span className="section-label">Experience</span>
+            <div className="divider" style={{ margin: '0 auto 20px' }} />
+            <h2 className="section-title" style={{ margin: '0 auto' }}>Where I've put strategy to work</h2>
+          </motion.div>
+
+          <div style={{
+            maxWidth: '780px',
+            margin: '0 auto',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '20px',
+          }}>
+            {EXPERIENCE.map((job, i) => (
+              <motion.div
+                key={i}
+                {...fadeUp(0.08 + i * 0.08)}
+                whileHover={{ y: -3, boxShadow: '0 12px 32px var(--shadow)' }}
+                style={{
+                  padding: '28px 32px',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border)',
+                  borderLeft: '3px solid var(--accent)',
+                  borderRadius: '6px',
+                  transition: 'transform 0.25s ease, box-shadow 0.25s ease',
+                }}
+              >
+                <div style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'baseline',
+                  gap: '12px',
+                  flexWrap: 'wrap',
+                  marginBottom: '6px',
+                }}>
+                  <h3 style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: '1.1875rem',
+                    fontWeight: 700,
+                    color: 'var(--text-primary)',
+                  }}>
+                    {job.company}
+                  </h3>
+                  {job.period && (
+                    <span className="tag" style={{ fontSize: '0.75rem', padding: '4px 12px' }}>
+                      {job.period}
+                    </span>
+                  )}
+                </div>
+                <div style={{
+                  fontSize: '0.9375rem',
+                  fontWeight: 600,
+                  color: 'var(--accent)',
+                  marginBottom: '12px',
+                }}>
+                  {job.role}
+                </div>
+                <p style={{
+                  fontSize: '0.9375rem',
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.75,
+                }}>
+                  {job.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="section">
+        <div className="container">
+          <motion.div {...fadeUp(0.05)} style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <span className="section-label">Certifications</span>
+            <div className="divider" style={{ margin: '0 auto 20px' }} />
+            <h2 className="section-title" style={{ margin: '0 auto' }}>Credentials behind the craft</h2>
+          </motion.div>
+
+          <div className="cert-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(2, 1fr)',
+            gap: '24px',
+            maxWidth: '780px',
+            margin: '0 auto',
+          }}>
+            {CERTIFICATIONS.map((cert, i) => (
+              <motion.div
+                key={i}
+                {...fadeUp(0.1 + i * 0.1)}
+                whileHover={{ y: -3, boxShadow: '0 12px 32px var(--shadow)' }}
+                style={{
+                  padding: '32px 28px',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '6px',
+                  textAlign: 'center',
+                  transition: 'transform 0.25s ease, box-shadow 0.25s ease',
+                }}
+              >
+                <div style={{
+                  width: '52px', height: '52px',
+                  margin: '0 auto 18px',
+                  background: 'var(--accent-dim)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'var(--accent)',
+                }}>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                  </svg>
+                </div>
+                <h3 style={{
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: '1.0625rem',
+                  fontWeight: 700,
+                  color: 'var(--text-primary)',
+                  marginBottom: '8px',
+                }}>
+                  {cert.title}
+                </h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                  {cert.issuer} · {cert.year}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        <style>{`
+          @media (max-width: 700px) {
+            .cert-grid { grid-template-columns: 1fr !important; }
+          }
+        `}</style>
+      </section>
+
       {/* Expertise tags */}
       <section style={{ paddingBottom: '108px' }}>
         <div className="container">
@@ -236,10 +424,10 @@ export default function About() {
               justifyContent: 'center',
             }}>
               {[
-                'On-Page SEO', 'Off-Page SEO', 'Technical SEO', 'Keyword Research',
-                'Link Building', 'Meta Ads', 'Facebook Advertising', 'Instagram Advertising',
-                'Audience Targeting', 'LinkedIn Growth', 'Content Strategy', 'Lead Generation',
-                'Digital Marketing Strategy', 'Brand Positioning',
+                'On-Page SEO', 'Off-Page SEO & Backlink Building', 'Keyword Research',
+                'Shopify Store Management', 'Meta Ads', 'Facebook Advertising', 'Instagram Advertising',
+                'Content Writing & Blog Articles', 'Product Descriptions', 'Social Media Marketing',
+                'Lead Generation', 'LinkedIn Management',
               ].map(tag => (
                 <span key={tag} className="tag" style={{ fontSize: '0.8125rem', padding: '6px 14px' }}>
                   {tag}
