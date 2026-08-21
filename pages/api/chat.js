@@ -54,7 +54,8 @@ export default async function handler(req, res) {
     const groq = new Groq({ apiKey })
 
     const completion = await groq.chat.completions.create({
-      model: 'llama-3.1-8b-instant',
+      model: 'openai/gpt-oss-20b',
+      reasoning_effort: 'low',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
         ...messages.slice(-8).map(m => ({
@@ -62,7 +63,7 @@ export default async function handler(req, res) {
           content: String(m.content),
         })),
       ],
-      max_tokens: 180,
+      max_tokens: 240,
       temperature: 0.65,
     })
 
