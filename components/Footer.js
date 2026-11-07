@@ -126,6 +126,19 @@ export default function Footer() {
           <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
             SEO &amp; Meta Ads Expert
           </p>
+          <p style={{ fontSize: '0.8125rem', color: 'var(--text-muted)' }}>
+            Website by{' '}
+            <a
+              href="https://itovio.com"
+              target="_blank"
+              rel="noopener"
+              style={{ color: 'var(--text-secondary)', transition: 'color 0.2s' }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'var(--accent)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+            >
+              ITovio
+            </a>
+          </p>
         </div>
       </div>
 

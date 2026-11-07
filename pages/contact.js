@@ -151,6 +151,7 @@ export default function Contact() {
         <title>Contact — Anam Shahid | Get In Touch</title>
         <meta name="description" content="Contact Anam Shahid to discuss your digital marketing project — SEO, Meta Ads, or LinkedIn growth strategy." />
         <link rel="canonical" href="https://anam.itovio.com/contact" />
+        <meta property="og:url" content="https://anam.itovio.com/contact" />
       </Head>
 
       <section style={{

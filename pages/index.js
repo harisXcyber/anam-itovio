@@ -59,6 +59,14 @@ export default function Home() {
           url: 'https://anam.itovio.com',
           knowsAbout: ['SEO', 'Meta Ads', 'LinkedIn Marketing', 'Lead Generation'],
         }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Anam Shahid',
+          url: 'https://anam.itovio.com',
+          publisher: { '@type': 'Person', name: 'Anam Shahid', url: 'https://anam.itovio.com' },
+          creator: { '@type': 'Organization', '@id': 'https://itovio.com/#org', name: 'ITovio', url: 'https://itovio.com' },
+        }) }} />
       </Head>
 
       {/* ── Hero ── */}

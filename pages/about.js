@@ -81,6 +81,7 @@ export default function About() {
         <title>About — Anam Shahid | Digital Marketing Strategist</title>
         <meta name="description" content="Learn about Anam Shahid — a digital marketing strategist specializing in SEO, Meta Ads, and LinkedIn growth. Her story, approach, and working style." />
         <link rel="canonical" href="https://anam.itovio.com/about" />
+        <meta property="og:url" content="https://anam.itovio.com/about" />
       </Head>
 
       {/* Page header */}

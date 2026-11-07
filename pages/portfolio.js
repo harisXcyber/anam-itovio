@@ -99,6 +99,7 @@ export default function Portfolio() {
         <title>Portfolio — Anam Shahid | Work & Case Studies</title>
         <meta name="description" content="How Anam Shahid approaches digital marketing work — SEO, Meta Ads, and LinkedIn growth. Case studies available upon request." />
         <link rel="canonical" href="https://anam.itovio.com/portfolio" />
+        <meta property="og:url" content="https://anam.itovio.com/portfolio" />
       </Head>
 
       {/* Header */}

@@ -86,6 +86,7 @@ export default function Services() {
         <title>Services — Anam Shahid | SEO, Meta Ads & Digital Marketing</title>
         <meta name="description" content="Digital marketing services from Anam Shahid — on-page & off-page SEO, Shopify store management, Meta Ads, content writing, keyword research, social media marketing, lead generation, and LinkedIn management." />
         <link rel="canonical" href="https://anam.itovio.com/services" />
+        <meta property="og:url" content="https://anam.itovio.com/services" />
       </Head>
 
       {/* Header */}
