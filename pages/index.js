@@ -46,7 +46,7 @@ export default function Home() {
         <meta name="keywords" content="SEO expert, Meta Ads, digital marketing, LinkedIn growth, lead generation, Anam Shahid" />
         <meta property="og:title" content="Anam Shahid — SEO & Meta Ads Expert" />
         <meta property="og:description" content="Digital marketing strategist specializing in SEO, Meta Ads, and LinkedIn growth." />
-        <meta property="og:image" content="/anam-banner.jpeg" />
+        <meta property="og:image" content="https://anam.itovio.com/anam-banner.jpeg" />
         <meta property="og:url" content="https://anam.itovio.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://anam.itovio.com" />
